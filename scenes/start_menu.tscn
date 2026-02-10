@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bglucmjfr8hi5"]
+
+[ext_resource type="Script" uid="uid://lh2il80i8ju3" path="res://scripts/start_menu.gd" id="1_ouf4f"]
+
+[node name="Control" type="Control" unique_id=154517804]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_ouf4f")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=842736084]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=2126765259]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 215.0
+offset_right = 678.0
+offset_bottom = 238.0
+text = "SIMON SAYS: WOOF!"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=363988233]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 398.0
+offset_right = 601.0
+offset_bottom = 429.0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 50
+
+[node name="Button" type="Button" parent="HBoxContainer" unique_id=1784545782]
+layout_mode = 2
+text = "START"
+
+[node name="Button2" type="Button" parent="HBoxContainer" unique_id=1245833563]
+layout_mode = 2
+text = "KEYS"
+
+[connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button2" to="." method="_on_button_2_pressed"]

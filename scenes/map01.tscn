@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cg21cub55sa0i"]
+
+[ext_resource type="Texture2D" uid="uid://ca4ij0fk7ye4o" path="res://assets/fondos mapa/PNG/summer/5.png" id="1_34vk4"]
+
+[node name="Map01" type="Node2D" unique_id=1634626545]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=808142619]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_34vk4")
+expand_mode = 1
