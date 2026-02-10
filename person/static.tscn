@@ -1,61 +1,61 @@
 [gd_scene format=3 uid="uid://k0mlrfvpdkqe"]
 
-[ext_resource type="Texture2D" uid="uid://b2ftq5kwd8ib3" path="res://assets/Design/Animation/personaquieta.png" id="1_yij82"]
+[ext_resource type="Texture2D" uid="uid://b2ftq5kwd8ib3" path="res://assets/Design/Animation/personaquieta.png" id="1_n4sra"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmfvg"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(0, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5by7a"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(99, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h7tkd"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(198, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bjqpt"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(297, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xf2sp"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(396, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7k0a3"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(495, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uo64d"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(594, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5kxpn"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(0, 178, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fr4uc"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(99, 178, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hak1h"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(198, 178, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_arwic"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(297, 178, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_um4xx"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(396, 178, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_udt7g"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(495, 178, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bxyf8"]
-atlas = ExtResource("1_yij82")
+atlas = ExtResource("1_n4sra")
 region = Rect2(594, 178, 99, 178)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tioej"]
@@ -108,7 +108,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="personaQuieta" type="CharacterBody2D" unique_id=1687186058]
+[node name="personStatic" type="CharacterBody2D" unique_id=1687186058]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1724683895]
 sprite_frames = SubResource("SpriteFrames_tioej")

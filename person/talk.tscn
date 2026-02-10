@@ -108,7 +108,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="personaHablando" type="CharacterBody2D" unique_id=548230972]
+[node name="personTalk" type="CharacterBody2D" unique_id=548230972]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1036537798]
 sprite_frames = SubResource("SpriteFrames_7xrak")

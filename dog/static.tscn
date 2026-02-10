@@ -45,7 +45,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="perroQuieto" type="CharacterBody2D" unique_id=1740066983]
+[node name="dogStatic" type="CharacterBody2D" unique_id=1740066983]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2119146258]
 sprite_frames = SubResource("SpriteFrames_fgjki")

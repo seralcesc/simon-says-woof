@@ -80,7 +80,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="perroKk" type="CharacterBody2D" unique_id=1157255953]
+[node name="dogJump" type="CharacterBody2D" unique_id=1157255953]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1060136191]
 sprite_frames = SubResource("SpriteFrames_7r2ai")

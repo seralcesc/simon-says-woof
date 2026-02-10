@@ -59,7 +59,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="perroConfuso" type="CharacterBody2D" unique_id=1310393316]
+[node name="dogConfusing" type="CharacterBody2D" unique_id=1310393316]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1531853561]
 sprite_frames = SubResource("SpriteFrames_bo32o")
