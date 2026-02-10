@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cq00ghtj28mb1"]
 
-[ext_resource type="Script" uid="uid://c7h2ri0d5vj0f" path="res://life_counter/life_counter.gd" id="1_xcixa"]
+[ext_resource type="Script" uid="uid://c7h2ri0d5vj0f" path="res://scripts/life_counter.gd" id="1_06oib"]
 
 [node name="Life_counter" type="Control" unique_id=2079700569]
 layout_mode = 3
@@ -11,7 +11,7 @@ offset_right = -1152.0
 offset_bottom = -648.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_xcixa")
+script = ExtResource("1_06oib")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1098956329]
 layout_mode = 1
