@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cuqyyljlgggvw" path="res://scripts/keys.gd" id="1_4nldw"]
 [ext_resource type="FontFile" uid="uid://tlcvd5bq06p5" path="res://fonts/song_of_valentine_sans/Song of Valentine Sans.otf" id="2_2jci7"]
+[ext_resource type="Texture2D" uid="uid://j4tdnikvv8fo" path="res://assets/keyboard/w.png" id="2_qqusu"]
+[ext_resource type="Texture2D" uid="uid://cxfh2jrdbgg7w" path="res://assets/keyboard/a.png" id="3_15y7x"]
+[ext_resource type="Texture2D" uid="uid://e5tubxcm6yuw" path="res://assets/keyboard/s.png" id="4_nd53h"]
+[ext_resource type="Texture2D" uid="uid://cgqsym75wrnac" path="res://assets/keyboard/d.png" id="5_b662y"]
 
 [node name="Control" type="Control" unique_id=382168116]
 layout_mode = 3
@@ -26,13 +30,30 @@ text = "EXIT"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=40473703]
 layout_mode = 0
-offset_left = 586.0
-offset_top = 174.0
-offset_right = 800.0
-offset_bottom = 406.0
+offset_left = 461.0
+offset_top = 167.0
+offset_right = 723.0
+offset_bottom = 405.0
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=1873647386]
 layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=260576732]
+layout_mode = 2
+texture = ExtResource("2_qqusu")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=99541627]
+layout_mode = 2
+texture = ExtResource("3_15y7x")
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=2041843344]
+layout_mode = 2
+texture = ExtResource("4_nd53h")
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=1979134796]
+layout_mode = 2
+texture = ExtResource("5_b662y")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1692554529]
 layout_mode = 2
