@@ -1,29 +1,41 @@
 extends Control # DIALOGUE
 
-var current_order := ""
-
-var ordenes = {
-	"siéntate": "ui_down",
-	"haz popo": "ui_accept",
-	"salta": "ui_up",
-	"ladra": "ui_left"
-}
-
 @onready var label = $Label
+
+var current_order := ""
+var waiting = false
+
+var orders = {
+	"SIT!": "move_down",   # S
+	"JUMP!": "move_up",    # W
+	"WOOF!": "move_left",  # A
+	"POOP!": "move_right"  # D
+}
 
 func _ready():
 	randomize()
 	new_order()
 
 func _process(_delta):
-	if current_order != "":
-		var correct_action = ordenes[current_order]
-		if Input.is_action_just_pressed(correct_action): # Falta enlazarlo. Si la acción es correcta
-			#sumar_puntos(1)
-			new_order()
-			#actualizar_puntos()
+	if waiting or current_order == "":
+		return
+	var correct_action = orders[current_order]
+	if Input.is_action_just_pressed(correct_action):
+		print("points +1")
+		next_order()
+	elif Input.is_anything_pressed():
+		print("points -1")
+		next_order()
 
 func new_order():
-	var names = ordenes.keys()
+	var names = orders.keys()
 	current_order = names[randi() % names.size()]
-	label.text = "Simon dice: " + current_order
+	label.text = "Simon says: " + current_order
+
+func next_order():
+	$".".visible = false
+	waiting = true
+	await get_tree().create_timer(1.0).timeout 
+	new_order()
+	waiting = false
+	$".".visible = true

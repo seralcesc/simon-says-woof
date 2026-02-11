@@ -28,7 +28,7 @@ position = Vector2(602, 360)
 position = Vector2(427, 250)
 
 [node name="dialogue" parent="." unique_id=1470227166 instance=ExtResource("4_jjobw")]
-offset_left = 226.0
-offset_top = -77.0
-offset_right = 226.0
-offset_bottom = -77.0
+offset_left = 225.0
+offset_top = -83.0
+offset_right = 225.0
+offset_bottom = -83.0
