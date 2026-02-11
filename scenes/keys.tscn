@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cuqyyljlgggvw" path="res://scripts/keys.gd" id="1_4nldw"]
 [ext_resource type="FontFile" uid="uid://tlcvd5bq06p5" path="res://fonts/song_of_valentine_sans/Song of Valentine Sans.otf" id="2_2jci7"]
+[ext_resource type="Texture2D" uid="uid://djjuudiwsxsqk" path="res://assets/background/vintage-gold-frame-transparent-png-56391.jpg" id="2_15y7x"]
 [ext_resource type="Texture2D" uid="uid://j4tdnikvv8fo" path="res://assets/keyboard/w.png" id="2_qqusu"]
 [ext_resource type="Texture2D" uid="uid://cxfh2jrdbgg7w" path="res://assets/keyboard/a.png" id="3_15y7x"]
 [ext_resource type="Texture2D" uid="uid://e5tubxcm6yuw" path="res://assets/keyboard/s.png" id="4_nd53h"]
@@ -16,83 +17,118 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4nldw")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=108470966]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_15y7x")
+
 [node name="Button" type="Button" parent="." unique_id=43482404]
 layout_mode = 0
-offset_left = 488.0
-offset_top = 451.0
-offset_right = 675.0
-offset_bottom = 542.0
+offset_left = 507.0
+offset_top = 510.0
+offset_right = 632.0
+offset_bottom = 582.0
 theme_override_constants/outline_size = 5
 theme_override_constants/align_to_largest_stylebox = 20
 theme_override_constants/line_spacing = 20
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 45
 text = "EXIT"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=40473703]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1692554529]
 layout_mode = 0
-offset_left = 461.0
-offset_top = 167.0
-offset_right = 723.0
-offset_bottom = 405.0
+offset_left = 515.0
+offset_top = 187.0
+offset_right = 766.0
+offset_bottom = 478.0
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=1873647386]
+[node name="Label5" type="Label" parent="VBoxContainer" unique_id=799351952]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 40
+text = "Movimientos"
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=260576732]
-layout_mode = 2
-texture = ExtResource("2_qqusu")
+[node name="Label4" type="Label" parent="VBoxContainer/Label5" unique_id=1714584979]
+layout_mode = 0
+offset_left = -96.0
+offset_right = -18.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.20871013, 0.20871016, 0.20871007, 1)
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 22
+text = "flechas"
+text_overrun_behavior = 1
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=99541627]
-layout_mode = 2
-texture = ExtResource("3_15y7x")
-
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=2041843344]
-layout_mode = 2
-texture = ExtResource("4_nd53h")
-
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer/VBoxContainer2" unique_id=1979134796]
-layout_mode = 2
-texture = ExtResource("5_b662y")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1692554529]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1426885296]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1426885296]
 layout_mode = 2
 theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 20
 theme_override_font_sizes/font_size = 40
 text = "Saltar"
 
-[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1157816649]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Label" unique_id=260576732]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -9.0
+offset_right = -18.0
+offset_bottom = 34.0
+texture = ExtResource("2_qqusu")
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=1157816649]
 layout_mode = 2
 theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 20
 theme_override_font_sizes/font_size = 40
 text = "Ladrar"
 
-[node name="Label3" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1902615793]
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/Label2" unique_id=99541627]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -6.0
+offset_right = -18.0
+offset_bottom = 40.0
+texture = ExtResource("3_15y7x")
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=1902615793]
 layout_mode = 2
 theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 20
 theme_override_font_sizes/font_size = 40
 text = "Sentarse"
 
-[node name="Label4" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1593591764]
+[node name="TextureRect3" type="TextureRect" parent="VBoxContainer/Label3" unique_id=2041843344]
+layout_mode = 0
+offset_left = -66.0
+offset_right = -18.0
+offset_bottom = 48.0
+texture = ExtResource("4_nd53h")
+
+[node name="Label4" type="Label" parent="VBoxContainer" unique_id=1593591764]
 layout_mode = 2
 theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 20
 theme_override_font_sizes/font_size = 40
 text = "Hacer caca"
 
+[node name="TextureRect4" type="TextureRect" parent="VBoxContainer/Label4" unique_id=1979134796]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 8.0
+offset_right = -18.0
+offset_bottom = 55.0
+texture = ExtResource("5_b662y")
+
 [node name="Label" type="Label" parent="." unique_id=2084192806]
 layout_mode = 0
-offset_left = 484.0
-offset_top = 42.0
-offset_right = 661.0
-offset_bottom = 144.0
-theme_override_colors/font_outline_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+offset_left = 488.0
+offset_top = 62.0
+offset_right = 665.0
+offset_bottom = 164.0
+theme_override_colors/font_outline_color = Color(0.69411767, 0.7019608, 0.09019608, 1)
 theme_override_constants/outline_size = 20
 theme_override_constants/shadow_outline_size = 20
 theme_override_fonts/font = ExtResource("2_2jci7")
