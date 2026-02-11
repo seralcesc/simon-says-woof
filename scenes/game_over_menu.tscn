@@ -33,10 +33,10 @@ text = "GAME OVER !!"
 
 [node name="Button" type="Button" parent="." unique_id=1784545782]
 layout_mode = 0
-offset_left = 506.0
-offset_top = 431.0
-offset_right = 694.0
-offset_bottom = 522.0
+offset_left = 487.0
+offset_top = 411.0
+offset_right = 675.0
+offset_bottom = 502.0
 theme_override_constants/outline_size = 5
 theme_override_constants/align_to_largest_stylebox = 20
 theme_override_constants/line_spacing = 20
