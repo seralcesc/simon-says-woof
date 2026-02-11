@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3kycs4cbk8jn"
-path="res://.godot/imported/4.png-0f1f7dfec0878f5c58d5900b1f2f877a.ctex"
+uid="uid://c86dla5ineuvb"
+path="res://.godot/imported/2.png-90dd0db7aa273a6e32b6f5aedb48635b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background map/PNG/autumn/4.png"
-dest_files=["res://.godot/imported/4.png-0f1f7dfec0878f5c58d5900b1f2f877a.ctex"]
+source_file="res://assets/background/map/summer/2.png"
+dest_files=["res://.godot/imported/2.png-90dd0db7aa273a6e32b6f5aedb48635b.ctex"]
 
 [params]
 

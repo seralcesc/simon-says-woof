@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cg21cub55sa0i"]
 
-[ext_resource type="Texture2D" uid="uid://ca4ij0fk7ye4o" path="res://assets/background map/PNG/summer/5.png" id="1_34vk4"]
+[ext_resource type="Texture2D" uid="uid://ca4ij0fk7ye4o" path="res://assets/background/map/summer/5.png" id="1_34vk4"]
+[ext_resource type="PackedScene" uid="uid://dsvxue00vhnhp" path="res://scenes/dog.tscn" id="2_rrcok"]
+[ext_resource type="PackedScene" uid="uid://dxci46ytk0lnm" path="res://scenes/person.tscn" id="3_jjobw"]
 
 [node name="Map01" type="Node2D" unique_id=1634626545]
 
@@ -17,3 +19,9 @@ grow_vertical = 2
 size_flags_horizontal = 4
 texture = ExtResource("1_34vk4")
 expand_mode = 1
+
+[node name="CharacterBody2D" parent="." unique_id=983513738 instance=ExtResource("2_rrcok")]
+position = Vector2(602, 360)
+
+[node name="CharacterBody2D2" parent="." unique_id=1314665117 instance=ExtResource("3_jjobw")]
+position = Vector2(427, 250)

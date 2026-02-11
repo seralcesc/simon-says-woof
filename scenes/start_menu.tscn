@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bglucmjfr8hi5"]
 
 [ext_resource type="Script" uid="uid://lh2il80i8ju3" path="res://scripts/menu.gd" id="1_ouf4f"]
+[ext_resource type="Texture2D" uid="uid://cp0iwih3djj36" path="res://assets/background/menu.webp" id="2_m7x51"]
 [ext_resource type="FontFile" uid="uid://tlcvd5bq06p5" path="res://fonts/song_of_valentine_sans/Song of Valentine Sans.otf" id="2_thu50"]
 
 [node name="Control" type="Control" unique_id=154517804]
@@ -17,14 +18,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_m7x51")
 
 [node name="Label" type="Label" parent="." unique_id=2126765259]
 layout_mode = 0
-offset_left = 253.0
-offset_top = 118.0
-offset_right = 915.0
-offset_bottom = 220.0
-theme_override_colors/font_outline_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+offset_left = 246.0
+offset_top = 136.0
+offset_right = 908.0
+offset_bottom = 238.0
+theme_override_colors/font_outline_color = Color(0.09019608, 0.3137255, 0.5254902, 1)
 theme_override_constants/outline_size = 20
 theme_override_constants/shadow_outline_size = 20
 theme_override_fonts/font = ExtResource("2_thu50")
@@ -33,10 +35,10 @@ text = "SIMON SAYS: WOOF!"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=363988233]
 layout_mode = 0
-offset_left = 367.0
-offset_top = 361.0
-offset_right = 782.0
-offset_bottom = 452.0
+offset_left = 362.0
+offset_top = 368.0
+offset_right = 777.0
+offset_bottom = 459.0
 theme_override_constants/separation = 80
 
 [node name="Button" type="Button" parent="HBoxContainer" unique_id=1784545782]

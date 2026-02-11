@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://co1eclvprqdj3"]
 
 [ext_resource type="Script" uid="uid://lh2il80i8ju3" path="res://scripts/menu.gd" id="1_cwb3k"]
+[ext_resource type="Texture2D" uid="uid://cp0iwih3djj36" path="res://assets/background/menu.webp" id="2_81acl"]
 [ext_resource type="FontFile" uid="uid://tlcvd5bq06p5" path="res://fonts/song_of_valentine_sans/Song of Valentine Sans.otf" id="2_ccgoi"]
 
 [node name="Control" type="Control" unique_id=154517804]
@@ -11,12 +12,14 @@ offset_bottom = 648.0
 script = ExtResource("1_cwb3k")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=842736084]
+modulate = Color(0.99999934, 0.31701708, 0.31497833, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_81acl")
 
 [node name="Label" type="Label" parent="." unique_id=2126765259]
 layout_mode = 0
@@ -24,7 +27,7 @@ offset_left = 367.0
 offset_top = 133.0
 offset_right = 818.0
 offset_bottom = 235.0
-theme_override_colors/font_outline_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+theme_override_colors/font_outline_color = Color(0.5686275, 0.1764706, 0.24705882, 1)
 theme_override_constants/outline_size = 20
 theme_override_constants/shadow_outline_size = 20
 theme_override_fonts/font = ExtResource("2_ccgoi")
