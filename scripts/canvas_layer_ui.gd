@@ -1,30 +1,30 @@
 extends CanvasLayer
 
-@onready var label_tiempo = $TextureRect/LabelTimer
-@onready var label_vidas = $TextureRect2/LabelLives
+@onready var time_label = $TextureRect/LabelTimer
+@onready var lives_label = $TextureRect2/LabelLives
 
-var tiempo_restante = 60.0
-var vidas = 3
+var time_remaining = 60.0
+var lives = 3
 
 func _process(delta):
-	if tiempo_restante > 0:
-		tiempo_restante -= delta
-		label_tiempo.text = str(int(tiempo_restante))
-		if tiempo_restante <= 0:
-			ganar_partida()
+	if time_remaining > 0:
+		time_remaining -= delta
+		time_label.text = str(int(time_remaining))
+		if time_remaining <= 0:
+			win_game()
 
-func quitar_vida() -> bool:
-	vidas -= 1
-	label_vidas.text = "Lives: " + str(vidas)
+func remove_life() -> bool:
+	lives -= 1
+	lives_label.text = "Lives: " + str(lives)
 	
-	if vidas <= 0:
-		perder_partida()
+	if lives <= 0:
+		lose_game()
 		return true
 	
 	return false
 
-func ganar_partida():
+func win_game():
 	get_tree().change_scene_to_file("res://scenes/win_menu.tscn")
 
-func perder_partida():
+func lose_game():
 	get_tree().change_scene_to_file("res://scenes/game_over_menu.tscn")
