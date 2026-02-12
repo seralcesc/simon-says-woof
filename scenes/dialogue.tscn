@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://p0jxq4c4g1uh"]
+
+[ext_resource type="Script" uid="uid://brll8t6ccaqrq" path="res://scripts/dialogue.gd" id="1_3n4vj"]
+[ext_resource type="Texture2D" uid="uid://c0u22kj7o54mn" path="res://assets/dialogue/pngtree-blue-stripe-bubble-download-image_1250698-removebg-preview.png" id="1_jwyou"]
+
+[node name="Control" type="Control" unique_id=1470227166]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3n4vj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=949237464]
+layout_mode = 0
+offset_right = 412.0
+offset_bottom = 344.0
+texture = ExtResource("1_jwyou")
+expand_mode = 1
+flip_h = true
+
+[node name="Label" type="Label" parent="." unique_id=1585174874]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 69.0
+offset_top = 152.0
+offset_right = 349.0
+offset_bottom = 194.0
+theme_override_colors/font_outline_color = Color(0, 0.39607844, 0.75686276, 1)
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 30
+text = "DIALOGUE"
+autowrap_mode = 2

@@ -1,4 +1,4 @@
-extends Node
+extends Node # MENU
 
 # Button Start
 func _on_button_pressed() -> void:

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ca4ij0fk7ye4o" path="res://assets/background/map/summer/5.png" id="1_34vk4"]
 [ext_resource type="PackedScene" uid="uid://dsvxue00vhnhp" path="res://scenes/dog.tscn" id="2_rrcok"]
 [ext_resource type="PackedScene" uid="uid://dxci46ytk0lnm" path="res://scenes/person.tscn" id="3_jjobw"]
+[ext_resource type="PackedScene" uid="uid://p0jxq4c4g1uh" path="res://scenes/dialogue.tscn" id="4_jjobw"]
 
 [node name="Map01" type="Node2D" unique_id=1634626545]
 
@@ -20,8 +21,14 @@ size_flags_horizontal = 4
 texture = ExtResource("1_34vk4")
 expand_mode = 1
 
-[node name="CharacterBody2D" parent="." unique_id=983513738 instance=ExtResource("2_rrcok")]
+[node name="doog" parent="." unique_id=983513738 instance=ExtResource("2_rrcok")]
 position = Vector2(602, 360)
 
-[node name="CharacterBody2D2" parent="." unique_id=1314665117 instance=ExtResource("3_jjobw")]
+[node name="person" parent="." unique_id=1314665117 instance=ExtResource("3_jjobw")]
 position = Vector2(427, 250)
+
+[node name="dialogue" parent="." unique_id=1470227166 instance=ExtResource("4_jjobw")]
+offset_left = 225.0
+offset_top = -83.0
+offset_right = 225.0
+offset_bottom = -83.0
