@@ -35,7 +35,7 @@ func new_order():
 func next_order():
 	$".".visible = false
 	waiting = true
-	await get_tree().create_timer(1.0).timeout 
+	await get_tree().create_timer(3.0).timeout 
 	new_order()
 	waiting = false
 	$".".visible = true

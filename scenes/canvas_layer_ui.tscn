@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dj5jiwqy6m03p"]
 
-[ext_resource type="Script" uid="uid://3p61d2seslv1" path="res://assets/background/back.png" id="1_acnty"]
+[ext_resource type="Script" uid="uid://ds8rwfxtxrf21" path="res://scripts/canvas_layer_ui.gd" id="1_3bfwg"]
 [ext_resource type="Texture2D" uid="uid://3p61d2seslv1" path="res://assets/background/back.png" id="1_qxxiy"]
 
 [node name="CanvasLayerUI" type="CanvasLayer" unique_id=347334777]
-script = ExtResource("1_acnty")
+script = ExtResource("1_3bfwg")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1668653551]
 anchors_preset = 1

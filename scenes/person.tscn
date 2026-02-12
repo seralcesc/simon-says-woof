@@ -1,19 +1,20 @@
 [gd_scene format=3 uid="uid://dxci46ytk0lnm"]
 
 [ext_resource type="Texture2D" uid="uid://b2ftq5kwd8ib3" path="res://assets/Design/Animation/personaquieta.png" id="1_5dovg"]
+[ext_resource type="Script" uid="uid://dwiv8xnykrk33" path="res://scripts/person.gd" id="1_jf287"]
 [ext_resource type="Texture2D" uid="uid://cktx2jb2w8goj" path="res://assets/Design/Animation/personahblando.png" id="2_jf287"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmfvg"]
 atlas = ExtResource("1_5dovg")
 region = Rect2(0, 0, 99, 178)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5by7a"]
-atlas = ExtResource("1_5dovg")
-region = Rect2(99, 0, 99, 178)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_h7tkd"]
 atlas = ExtResource("1_5dovg")
 region = Rect2(198, 0, 99, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5by7a"]
+atlas = ExtResource("1_5dovg")
+region = Rect2(99, 0, 99, 178)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bjqpt"]
 atlas = ExtResource("1_5dovg")
@@ -122,6 +123,17 @@ animations = [{
 "texture": SubResource("AtlasTexture_gmfvg")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_h7tkd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmfvg")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_5by7a")
 }, {
 "duration": 1.0,
@@ -207,15 +219,18 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a8qp2")
 }],
-"loop": true,
+"loop": false,
 "name": &"talk",
 "speed": 5.0
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1314665117]
+script = ExtResource("1_jf287")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=880607142]
 sprite_frames = SubResource("SpriteFrames_h4n5y")
 animation = &"talk"
-autoplay = "talk"
+autoplay = "default"
+frame = 13
+frame_progress = 1.0
 speed_scale = 1.5

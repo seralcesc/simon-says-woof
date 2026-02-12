@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dsvxue00vhnhp"]
 
 [ext_resource type="Texture2D" uid="uid://di73km6lu4vdj" path="res://assets/Design/Animation/barksprite without lines.png" id="1_ei5el"]
+[ext_resource type="Script" uid="uid://bdnr58lta7rn4" path="res://scripts/dog.gd" id="1_jlmqp"]
 [ext_resource type="Texture2D" uid="uid://7hwdbfj6tblv" path="res://assets/Design/Animation/barksprite with lines.png" id="2_jlmqp"]
 [ext_resource type="Texture2D" uid="uid://bob6ff4ebk56x" path="res://assets/Design/Animation/perrointerrogacion.png" id="3_v3i3p"]
 [ext_resource type="Texture2D" uid="uid://dj8yqaa1rmqgg" path="res://assets/Design/Animation/jumpsprite.png" id="4_x8of7"]
@@ -572,6 +573,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=983513738]
+script = ExtResource("1_jlmqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1796124739]
 sprite_frames = SubResource("SpriteFrames_ux4we")
