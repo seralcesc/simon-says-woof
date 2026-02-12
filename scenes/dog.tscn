@@ -364,7 +364,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nnrlo")
 }],
-"loop": true,
+"loop": false,
 "name": &"bark",
 "speed": 7.0
 }, {
@@ -390,7 +390,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k6qg0")
 }],
-"loop": true,
+"loop": false,
 "name": &"confusing",
 "speed": 5.0
 }, {
@@ -428,7 +428,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_o1vi4")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 8.0
 }, {
@@ -463,7 +463,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m3dmt")
 }],
-"loop": true,
+"loop": false,
 "name": &"poop",
 "speed": 5.0
 }, {
@@ -527,7 +527,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gllwh")
 }],
-"loop": true,
+"loop": false,
 "name": &"sit",
 "speed": 7.0
 }, {
@@ -577,6 +577,6 @@ script = ExtResource("1_jlmqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1796124739]
 sprite_frames = SubResource("SpriteFrames_ux4we")
-animation = &"jump"
+animation = &"sit"
 autoplay = "walk"
 frame_progress = 0.89815485

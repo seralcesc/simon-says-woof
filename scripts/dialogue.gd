@@ -24,32 +24,12 @@ func _ready():
 func _process(delta):
 	if not turn_active:
 		return
-	current_time -= delta
-	if current_time <= 0:
-		print("Too slow!")
-		turn_active = false
-		game_punishment()
-		return
-	if current_order != "":
-		var correct_action = orders[current_order]
-		if Input.is_action_just_pressed(correct_action):
-			print("Just in time!")
-			turn_active = false
-			next_order()
-		elif Input.is_anything_pressed():
-			print("Wrong key!")
-			turn_active = false
-			game_punishment()
-
-func game_punishment():
-	if dog_script:
-		dog_script.play_confusion()
-		
-	var player_died = false
-	
-	if ui_script:
-		player_died = ui_script.remove_life()
-	if not player_died:
+	var correct_action = orders[current_order]
+	if Input.is_action_pressed(correct_action):
+		print("points +1")
+		next_order()
+	elif Input.is_anything_pressed():
+		print("points -1")
 		next_order()
 
 func new_order():
