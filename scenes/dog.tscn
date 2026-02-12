@@ -366,7 +366,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"bark",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -430,7 +430,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -529,7 +529,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"sit",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -569,7 +569,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=983513738]
@@ -577,5 +577,6 @@ script = ExtResource("1_jlmqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1796124739]
 sprite_frames = SubResource("SpriteFrames_ux4we")
-animation = &"walk"
+animation = &"jump"
 autoplay = "walk"
+frame_progress = 0.89815485

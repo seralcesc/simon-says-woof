@@ -17,7 +17,7 @@ offset_bottom = 77.0
 grow_horizontal = 0
 texture = ExtResource("1_qxxiy")
 
-[node name="LabelTiempo" type="Label" parent="TextureRect" unique_id=1961970025]
+[node name="LabelTimer" type="Label" parent="TextureRect" unique_id=1961970025]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -32,7 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "100"
+text = "60"
 horizontal_alignment = 1
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=2108754399]
@@ -47,18 +47,20 @@ grow_horizontal = 0
 scale = Vector2(0.9964879, 0.65625)
 texture = ExtResource("1_qxxiy")
 
-[node name="LabelTiempo" type="Label" parent="." unique_id=257382571]
+[node name="LabelLives" type="Label" parent="TextureRect2" unique_id=257382571]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 422.0
-offset_top = -244.0
-offset_right = 536.0
-offset_bottom = -202.0
+offset_left = -55.404846
+offset_top = -33.52381
+offset_right = 58.595154
+offset_bottom = 8.476189
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.0098039, 1.4444444)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Lives:  3"

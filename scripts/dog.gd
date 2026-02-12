@@ -6,7 +6,12 @@ const FRICTION = 1400.0
 
 @onready var sprite = $AnimatedSprite2D
 
+var is_confused = false 
+
 func _physics_process(delta: float) -> void:
+	if is_confused:
+		return
+
 	var input_direction = Vector2.ZERO
 	
 	# MOTION
@@ -57,3 +62,12 @@ func _physics_process(delta: float) -> void:
 		sprite.flip_h = true
 
 	move_and_slide()
+
+func play_confusion():
+	is_confused = true
+	velocity = Vector2.ZERO
+	sprite.play("confusing")
+	
+	await get_tree().create_timer(1.0).timeout
+	
+	is_confused = false
