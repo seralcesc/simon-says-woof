@@ -20,7 +20,7 @@ func _process(_delta):
 	if waiting or current_order == "":
 		return
 	var correct_action = orders[current_order]
-	if Input.is_action_just_pressed(correct_action):
+	if Input.is_action_pressed(correct_action):
 		print("points +1")
 		next_order()
 	elif Input.is_anything_pressed():

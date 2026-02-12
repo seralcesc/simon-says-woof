@@ -5,17 +5,13 @@ extends CharacterBody2D # DOG
 func _process(_delta: float):
 	
 	# ANIMATIONS
-	if Input.is_key_pressed(KEY_W):
+	if Input.is_action_pressed("move_up"):
 		sprite.play("jump")
-
-	elif Input.is_key_pressed(KEY_S):
+	elif Input.is_action_pressed("move_down"):
 		sprite.play("sit")
-
-	elif Input.is_key_pressed(KEY_A):
+	elif Input.is_action_pressed("move_left"):
 		sprite.play("bark")
-
-	elif Input.is_key_pressed(KEY_D):
+	elif Input.is_action_pressed("move_right"):
 		sprite.play("poop")
-	
 	else:
 		sprite.play("static")
