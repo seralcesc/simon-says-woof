@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://d4isjpldtvtgh" path="res://assets/Design/Animation/sitsprite.png" id="7_ydcs6"]
 [ext_resource type="Texture2D" uid="uid://t4m65sl28u5s" path="res://assets/Design/Animation/idlesprite.png" id="8_fvvtv"]
 [ext_resource type="Texture2D" uid="uid://cmt8soebx413e" path="res://assets/Design/Animation/walksprite.png" id="9_gb5rq"]
+[ext_resource type="AudioStream" uid="uid://cmmfjbffvt5sw" path="res://sounds/dog/ladrido.mp3" id="11_v3i3p"]
+[ext_resource type="AudioStream" uid="uid://mcxobr80q08u" path="res://sounds/dog/pop.mp3" id="12_x8of7"]
+[ext_resource type="AudioStream" uid="uid://t1to17c5ehwo" path="res://sounds/dog/boing.mp3" id="13_4ke0b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ud64p"]
 atlas = ExtResource("1_ei5el")
@@ -58,30 +61,6 @@ region = Rect2(256, 0, 256, 256)
 [sub_resource type="AtlasTexture" id="AtlasTexture_v08f2"]
 atlas = ExtResource("2_jlmqp")
 region = Rect2(512, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m72dp"]
-atlas = ExtResource("2_jlmqp")
-region = Rect2(768, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7gya2"]
-atlas = ExtResource("2_jlmqp")
-region = Rect2(1024, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uroeb"]
-atlas = ExtResource("2_jlmqp")
-region = Rect2(1280, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hn7df"]
-atlas = ExtResource("2_jlmqp")
-region = Rect2(1536, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fe33g"]
-atlas = ExtResource("2_jlmqp")
-region = Rect2(1792, 0, 256, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nnrlo"]
-atlas = ExtResource("2_jlmqp")
-region = Rect2(2048, 0, 256, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ajkyb"]
 atlas = ExtResource("3_v3i3p")
@@ -345,24 +324,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_v08f2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m72dp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7gya2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uroeb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hn7df")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fe33g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nnrlo")
 }],
 "loop": false,
 "name": &"bark",
@@ -577,6 +538,14 @@ script = ExtResource("1_jlmqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1796124739]
 sprite_frames = SubResource("SpriteFrames_ux4we")
-animation = &"sit"
+animation = &"bark"
 autoplay = "walk"
-frame_progress = 0.89815485
+
+[node name="woof" type="AudioStreamPlayer2D" parent="." unique_id=834723053]
+stream = ExtResource("11_v3i3p")
+
+[node name="pop" type="AudioStreamPlayer2D" parent="." unique_id=231999897]
+stream = ExtResource("12_x8of7")
+
+[node name="boing" type="AudioStreamPlayer2D" parent="." unique_id=1316702672]
+stream = ExtResource("13_4ke0b")
