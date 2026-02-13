@@ -7,3 +7,5 @@ func _on_button_pressed() -> void:
 # Button Keys
 func _on_button_2_pressed() -> void:
 	get_tree().call_deferred("change_scene_to_file", "res://scenes/keys.tscn") # Go to the keyboard scene
+
+# comentary
