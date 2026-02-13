@@ -1,4 +1,4 @@
-extends Control #DIALOGUE
+extends Control #dialogue
 
 @onready var label = $Label
 @onready var dog_script = $"../dog"
