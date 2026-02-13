@@ -44,9 +44,7 @@ func _process(delta):
 func game_punishment():
 	if dog_script:
 		dog_script.play_confusion()
-		
 	var player_died = false
-	
 	if ui_script:
 		player_died = ui_script.remove_life()
 	if not player_died:
