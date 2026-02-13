@@ -28,3 +28,10 @@ func play_anim(anim_name: String, sound_node: AudioStreamPlayer2D = null):
 	sound_node.play()
 	await sprite.animation_finished
 	is_busy = false
+
+func play_confusion():
+	is_confused = true
+	velocity = Vector2.ZERO
+	sprite.play("dead")
+	await get_tree().create_timer(1.0).timeout
+	is_confused = false
