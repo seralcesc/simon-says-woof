@@ -8,26 +8,23 @@ extends CharacterBody2D # DOG
 var is_busy: bool = false
 
 func _process(_delta: float):
-
 	# ANIMATIONS
 	if Input.is_action_just_pressed("move_up"):
-		boing_sound.play()
-		play_anim("jump")
-		
+		play_anim("jump",boing_sound)
 	elif Input.is_action_just_pressed("move_down"):
 		play_anim("sit")
-		
 	elif Input.is_action_just_pressed("move_left"):
-		woof_sound.play()
-		play_anim("bark")
-		
+		play_anim("bark",woof_sound)
 	elif Input.is_action_just_pressed("move_right"):
-		pop_sound.play()
-		play_anim("poop")
-		
-	else:
-		if not sprite.is_playing() or sprite.animation == "static":
-			sprite.play("static")
+		play_anim("poop",pop_sound)
+	elif not sprite.is_playing():
+		sprite.play("static")
 
-func play_anim(anim_name: String):
+func play_anim(anim_name: String, sound_node: AudioStreamPlayer2D = null):
+	is_busy = true
 	sprite.play(anim_name)
+	if sound_node:
+		sound_node.play()
+
+func _on_animation_finished():
+	is_busy = false
