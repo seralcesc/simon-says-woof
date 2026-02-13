@@ -3,6 +3,8 @@ extends Control #dialogue
 @onready var label = $Label
 @onready var dog_script = $"../dog"
 @onready var ui_script = $"../CanvasLayerUI"
+@onready var correct_sound = $correct
+@onready var incorrect_sound = $incorrect
 
 var current_order := ""
 var waiting = false
@@ -34,10 +36,12 @@ func _process(delta):
 		var correct_action = orders[current_order]
 		if Input.is_action_just_pressed(correct_action):
 			print("Just in time!")
+			correct_sound.play()
 			turn_active = false
 			next_order()
 		elif Input.is_anything_pressed():
 			print("Wrong key!")
+			incorrect_sound.play()
 			turn_active = false
 			game_punishment()
 

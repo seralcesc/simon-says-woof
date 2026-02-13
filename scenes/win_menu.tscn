@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://lh2il80i8ju3" path="res://scripts/menu.gd" id="1_jx1is"]
 [ext_resource type="FontFile" uid="uid://tlcvd5bq06p5" path="res://fonts/song_of_valentine_sans/Song of Valentine Sans.otf" id="2_7shsi"]
 [ext_resource type="Texture2D" uid="uid://cp0iwih3djj36" path="res://assets/background/menu.webp" id="2_dmaew"]
+[ext_resource type="AudioStream" uid="uid://cywr62qcixrfa" path="res://sounds/you win.mp3" id="4_dmaew"]
 
 [node name="Control" type="Control" unique_id=154517804]
 layout_mode = 3
@@ -45,5 +46,9 @@ theme_override_constants/align_to_largest_stylebox = 20
 theme_override_constants/line_spacing = 20
 theme_override_font_sizes/font_size = 60
 text = "REPLAY"
+
+[node name="YouWin" type="AudioStreamPlayer" parent="." unique_id=1566370957]
+stream = ExtResource("4_dmaew")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
